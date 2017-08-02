@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+htmlentities(\$${1:str}, ${2:ENT_QUOTES})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>htmlentities()</tabTrigger>
+  <description>php str: convert all applicable chars to HTML entities</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

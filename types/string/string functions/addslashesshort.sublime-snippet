@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+addslashes(\$${1:str})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>addslashes()</tabTrigger>
+  <description>php str: backslash chars need to be escaped</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

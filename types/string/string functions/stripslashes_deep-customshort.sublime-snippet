@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+${2:function stripslashes_deep(\$value) {
+    \$value = is_array(\$value) ?
+                array_map('stripslashes_deep', \$value) :
+                stripslashes(\$value);
+
+    return \$value;
+\}
+}
+stripslashes_deep(\$${1:arr1})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>stripslashes_deep-custom</tabTrigger>
+  <description>php str: stripslashes on array</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

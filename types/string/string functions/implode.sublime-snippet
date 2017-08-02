@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+implode("${1:}", \$${2:arr1})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-implode()</tabTrigger>
+  <description>join array el with glue str. ret str</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

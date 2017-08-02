@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+convert_uudecode(${1:"+22!L;W9E"})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>convert_uudecode()</tabTrigger>
+  <description>php str: decodes uuencoded str</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

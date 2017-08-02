@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+${3:\$str = "first=value&arr[]=foo+bar&arr[]=baz";}
+parse_str(\$${1:str}, \$${2:output});
+${4:echo \$output['first'];}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-parse_str()</tabTrigger>
+  <description>parse str into variables</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

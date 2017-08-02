@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+array_search('${1:value1}', \$${2:arr});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-arr-array_search()</tabTrigger>
+  <description>search val, ret 1st key found</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+array_merge_recursive(\$${1:ar1}, \$${2:ar2})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>array_merge_recursive()</tabTrigger>
+  <description>php arr: val arr1 appended to end of prev arr</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+html_entity_decode(\$${1:str})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-html_entity_decode()</tabTrigger>
+  <description>convert HTML entities to their chars</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

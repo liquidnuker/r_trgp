@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+\$${1:arr} = [${2:""}];
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-array-init[]</tabTrigger>
+  <description>php array defaulter[]</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

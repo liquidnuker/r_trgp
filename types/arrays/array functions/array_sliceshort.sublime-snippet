@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+array_slice(\$${1:arr}, ${2:offset-2}, ${3:length-1}, ${4:preserve_keys: true})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>array_slice()</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php arr: ret slice /slice into new array</description>
+  <scope>source.php, text.html</scope>
+</snippet>

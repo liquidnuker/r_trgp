@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+array_filter(\$${1:array1}, "${2:callable callbackFn}")
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-arr-array_filter()</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>returns filtered arr</description>
+  <scope>source.php, text.html</scope>
+</snippet>

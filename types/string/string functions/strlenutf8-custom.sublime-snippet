@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+strlen(utf8_decode(\$${1:str}))
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-strlen-utf8-custom</tabTrigger>
+  <description>ret length utf8 str</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

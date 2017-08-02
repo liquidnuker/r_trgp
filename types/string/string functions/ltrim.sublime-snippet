@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+ltrim(\$${1:str}, ${2:mask-"Hdle"})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-ltrim()</tabTrigger>
+  <description>strip whitespace from left</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

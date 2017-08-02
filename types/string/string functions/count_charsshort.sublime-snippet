@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+count_chars(\$${1:str}, ${2:mode=3})
+${3:// 0 - an array with the byte-value as key and the frequency of every byte as value.
+// 1 - same as 0 but only byte-values with a frequency greater than zero are listed.
+// 2 - same as 0 but only byte-values with a frequency equal to zero are listed.
+// 3 - a string containing all unique characters is returned.
+// 4 - a string containing all not used characters is returned.}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>count_chars()</tabTrigger>
+  <description>php str: ret count of chars used</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

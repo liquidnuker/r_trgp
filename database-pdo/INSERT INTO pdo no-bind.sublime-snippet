@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+try{
+  \$sql = "INSERT INTO ${1:table_name} (${2:first_name, last_name}) VALUES (${3:'name1', 'lastname1'})";    
+  \$pdo->exec(\$sql);
+  // echo "records inserted successfully.";
+} catch(PDOException \$error){
+  die("ERROR: not able to execute \$sql. " . \$error->getMessage());
+}
+
+// Close connection
+unset(\$pdo);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-INSERT-INTO</tabTrigger>
+  <description>pdo no-bind</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

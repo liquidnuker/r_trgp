@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+strlen(\$${1:str})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-str-strlen()</tabTrigger>
+  <description>ret length of str</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>

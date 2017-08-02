@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+in_array("val", \$${1:arr}, true)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-arr-in_array()</tabTrigger>
+  <description>check if val exists in arr</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php, text.html</scope>
+</snippet>
