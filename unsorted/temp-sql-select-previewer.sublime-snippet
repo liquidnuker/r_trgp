@@ -1,0 +1,44 @@
+<snippet>
+  <content><![CDATA[
+// update previewer
+try{
+  \$sql = "SELECT * FROM test_table1";   
+  \$result = \$pdo->query(\$sql);
+
+  if(\$result->rowCount() > 0){
+    echo "<hr>"; 
+    echo "<table>";
+    echo "<tr>";
+    echo "<th>id</th>";
+    echo "<th>first_name</th>";
+    echo "<th>last_name</th>";
+    echo "<th>email</th>";
+    echo "</tr>";
+
+    while(\$row = \$result->fetch()){
+      echo "<tr>";
+      echo "<td>" . \$row['id'] . "</td>";
+      echo "<td>" . \$row['first_name'] . "</td>";
+      echo "<td>" . \$row['last_name'] . "</td>";
+      echo "<td>" . \$row['email'] . "</td>";
+      echo "</tr>";
+    }
+    echo "</table>";
+  // Free result set
+  unset(\$result);
+
+  } else{
+    echo "No records matching your query were found.";
+  }
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+// end update previewer
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-sql-select-previewer</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>temp update previewer</description>
+  <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<${2:div}><?php print $row['${1:id}']; ?></${2:div}>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-print-row-sql</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description></description>
+  <scope></scope>
+</snippet>
