@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+foreach (\$${1:arr2} as \$i) {
+  ${3:echo \$i["${2:prop}"];}
+} unset(\$i);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>foreach</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php foreach($arr as $i){...</description>
+  <scope>source.php</scope>
+</snippet>
