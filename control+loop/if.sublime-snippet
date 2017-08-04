@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+if (${1:cond}) {
+  ${2:}
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-cond-if</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>if(){...</description>
+  <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?php if (${1:cond}): ?>
+  ${2:}
+<?php else: ?>
+  ${3:}
+<?php endif ?>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>phpcondwrap</tabTrigger>
+  <description>if-else-endif wrapper</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope></scope>
+</snippet>

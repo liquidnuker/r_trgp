@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+echo (${1:cond} ? '${2:aaa}' : '${3:bbb}')
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>if-ternary</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>(cond ? 'true' : 'false')</description>
+  <scope>source.php</scope>
+</snippet>
