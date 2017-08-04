@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+for(\$i = 0, \$l = count(\$${1:arr}); \$i < \$l; \$i++) {
+    ${3:echo \$${1:arr}[\$i]["${2:prop}"] . "<br>"; }
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-loop-for</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>for($i=0; $i++){...</description>
+  <scope>source.php</scope>
+</snippet>
