@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+switch (\$${1:var}) {
+  ${4:case ${2:"0"}:
+  ${3:echo "";}
+break;}
+  default:
+  echo "default";
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>switch</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php switch($var)case:"":</description>
+  <scope>source.php</scope>
+</snippet>
