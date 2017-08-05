@@ -2,30 +2,27 @@
   <content><![CDATA[
 // update previewer
 try{
-  \$sql = "SELECT * FROM test_table1";   
-  \$result = \$pdo->query(\$sql);
+  \$stmt = \$pdo->query('SELECT * FROM test_table1');
 
-  if(\$result->rowCount() > 0){
+  if(\$stmt->rowCount() > 0){
     echo "<hr>"; 
     echo "<table>";
     echo "<tr>";
     echo "<th>id</th>";
-    echo "<th>first_name</th>";
-    echo "<th>last_name</th>";
-    echo "<th>email</th>";
+    echo "<th>firstname</th>";
+    echo "<th>lastname</th>";
     echo "</tr>";
 
-    while(\$row = \$result->fetch()){
+    while(\$row = \$stmt->fetch()){
       echo "<tr>";
       echo "<td>" . \$row['id'] . "</td>";
-      echo "<td>" . \$row['first_name'] . "</td>";
-      echo "<td>" . \$row['last_name'] . "</td>";
-      echo "<td>" . \$row['email'] . "</td>";
+      echo "<td>" . \$row['firstname'] . "</td>";
+      echo "<td>" . \$row['lastname'] . "</td>";
       echo "</tr>";
     }
     echo "</table>";
-  // Free result set
-  unset(\$result);
+    // Free result set
+    unset(\$stmt);
 
   } else{
     echo "No records matching your query were found.";
