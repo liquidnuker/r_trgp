@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+array_combine(\$${1:arrkey}, \$${2:arrval})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>array_combine</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php creates array by using one array for keys another for its values</description>
+  <scope>source.php</scope>
+</snippet>
