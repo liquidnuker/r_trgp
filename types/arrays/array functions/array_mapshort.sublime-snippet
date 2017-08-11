@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-array_map("callbackFn", \$${1:arr1});
+array_map("${1:callbackFn}", \$${2:arr1});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>array_map()</tabTrigger>
