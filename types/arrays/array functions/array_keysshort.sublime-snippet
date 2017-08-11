@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-array_values(${1:\$}${2:})
+array_keys(\$${1:arr1}${2:, "${3:val1}"})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>array_values()</tabTrigger>
-  <description>php array reindex</description>
+  <tabTrigger>array_keys</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.php, text.html</scope>
+  <description>php ret array of all keys in array</description>
+  <scope>source.php</scope>
 </snippet>
