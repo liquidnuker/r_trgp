@@ -3,7 +3,7 @@
 array_map("${1:callbackFn}", \$${2:arr1});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>array_map()</tabTrigger>
+  <tabTrigger>map()</tabTrigger>
   <description>php arr: apply callback to el of arrays</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.php, text.html</scope>
