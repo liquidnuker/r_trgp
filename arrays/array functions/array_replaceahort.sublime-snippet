@@ -3,7 +3,7 @@
 array_replace(\$${1:baseArr}, \$${2:replacement1}${3:, \$replacement2})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>array_replace</tabTrigger>
+  <tabTrigger>array_replace()</tabTrigger>
   <description>php arr: replace el of baseArr from replaceArr</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.php</scope>

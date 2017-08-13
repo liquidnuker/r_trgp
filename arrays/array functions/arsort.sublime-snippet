@@ -3,8 +3,8 @@
 arsort(\$${1:arr1}${2:, SORT_STRING | SORT_FLAG_CASE | SORT_NATURAL})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>php-arr-arsort</tabTrigger>
+  <tabTrigger>php-arr-arsort()</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <description>sort array reverse maintain index</description>
+  <description>reverse sort array maintain index</description>
   <scope>source.php</scope>
 </snippet>

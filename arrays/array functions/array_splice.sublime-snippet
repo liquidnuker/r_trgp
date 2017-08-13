@@ -3,7 +3,7 @@
 array_splice(${1:2-indexPos}, ${2:0-elToRemove}, ${3:"itemToAdd"});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>php-array_splice</tabTrigger>
+  <tabTrigger>php-array_splice()</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <description>array_splice(0, 1) remove/insert</description>
   <scope>source.php</scope>
