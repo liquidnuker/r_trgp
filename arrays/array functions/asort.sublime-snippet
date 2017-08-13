@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+asort(\$${1:arr1}${2:, SORT_STRING | SORT_FLAG_CASE | SORT_NATURAL})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-arr-asort</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>sort array maintain index</description>
+  <scope>source.php</scope>
+</snippet>
