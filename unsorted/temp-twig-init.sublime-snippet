@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+require_once '${1:../../vendor/twig/twig/lib/Twig/Autoloader.php}';
+Twig_Autoloader::register();
+\$loader = new Twig_Loader_Filesystem('${2:templates}');
+\$twig = new Twig_Environment(\$loader);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>twig-init-require</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php twig require,register,loader...</description>
+  <scope>source.php</scope>
+</snippet>
