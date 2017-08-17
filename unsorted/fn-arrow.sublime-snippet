@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-\$this->
+->${1:}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>php-this</tabTrigger>
-  <description>php $this-&gt;</description>
+  <tabTrigger>fn-arrow-&gt;</tabTrigger>
+  <description>php fn-arrow-&gt;</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.php, text.html</scope>
 </snippet>

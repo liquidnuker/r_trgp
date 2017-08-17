@@ -1,1 +1,2 @@
-{ "keys": ["ctrl+."], "command": "insert_snippet", "args": {"name": "Packages/User/tabtrigger_php/types/array_arrow.sublime-snippet"} },
+{ "keys": ["ctrl+."], "command": "insert_snippet", "args": {"name": "Packages/User/tabtrigger_php/arrays/array_arrow.sublime-snippet"} },
+{ "keys": ["ctrl+,"], "command": "insert_snippet", "args": {"name": "Packages/User/tabtrigger_php/unsorted/fn-arrow.sublime-snippet"} },
