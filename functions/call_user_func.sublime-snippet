@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+call_user_func(array(\$${1:obj/classname}, '${2:callbackFn}'))
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-call-user-func()</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>call the callback by first param</description>
+  <scope>source.php</scope>
+</snippet>
