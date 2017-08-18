@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+class ${1:Classname2} extends ${2:ClassName1} { 
+  ${3:}
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-class-extends</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>Class2 extends Class1{default...</description>
+  <scope>source.php</scope>
+</snippet>
