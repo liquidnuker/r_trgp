@@ -2,7 +2,7 @@
   <content><![CDATA[
 \$${1:str} = <<<'EOD'             
 ${2:}
-EOD;   
+${3:}EOD;   
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>nowdoc</tabTrigger>
