@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+const ${1:CONSTANT} = ${2:}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>const</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php const CONSTANT</description>
+  <scope>source.php</scope>
+</snippet>
