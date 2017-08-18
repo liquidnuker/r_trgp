@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+call_user_func_array(${2:"${1:fName}"|}${3:array(\$foo, "bar")}, \$${4:array_args})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-call-user-func-array()</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>call the callback with array of params</description>
+  <scope>source.php</scope>
+</snippet>
