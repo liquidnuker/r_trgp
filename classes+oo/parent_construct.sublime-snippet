@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+parent::__construct();
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>parent-construct</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php run parent::__construct();</description>
+  <scope>source.php</scope>
+</snippet>
