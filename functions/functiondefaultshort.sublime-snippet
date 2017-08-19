@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-function ${1:fName}(${2:\$arg}) {
-    ${3:${2:\$arg}}
-};
+function ${1:fName}() {
+  ${2:}
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>function()</tabTrigger>
