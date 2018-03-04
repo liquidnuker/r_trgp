@@ -1,13 +1,22 @@
 <snippet>
   <content><![CDATA[
-require_once '${1:../../vendor/twig/twig/lib/Twig/Autoloader.php}';
-Twig_Autoloader::register();
-\$loader = new Twig_Loader_Filesystem('${2:templates}');
-\$twig = new Twig_Environment(\$loader);
+require_once '../vendor/autoload.php';
+
+\$loader = new Twig_Loader_Filesystem('twig2-templates');
+\$twig = new Twig_Environment(\$loader, array(
+    'cache' => 'twig2-cache',
+));
+
+\$users = array("user1", "user2", "user3", "user4");
+
+echo \$twig->render('index.html', array(
+  'users' => \$users
+  // 't_var1' => \$testvar1,
+));
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>twig-init-require</tabTrigger>
+  <tabTrigger>twig-template-init-require</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <description>php twig require,register,loader...</description>
+  <description>php twig template require,register,loader...</description>
   <scope>source.php</scope>
 </snippet>
