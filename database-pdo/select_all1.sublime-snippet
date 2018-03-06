@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+// SELECT
+try{
+  \$stmt = \$pdo->query('SELECT * FROM test_table2');
+
+  if(\$stmt->rowCount() > 0){
+    // echo "<table>";
+    
+    while(\$row = \$stmt->fetch()){
+      echo \$row['first_name'] . "<br />";
+    }
+    // echo "</table>";
+
+    // Free result set
+    unset(\$stmt);
+
+  } else{
+    echo "No records matching your query were found.";
+  }
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-SELECT-all</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql SELECT *</description>
+  <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+// testvar
+\$newname = "nameinsert2";
+\$newemail = "emailinsert2";
+
+// INSERT INTO
+try {
+  \$stmt = \$pdo->prepare('INSERT INTO test_table2 (first_name, email) VALUES (?, ?)');
+  \$stmt->execute([\$newname, \$newemail]);
+
+  echo "inserted";   
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-INSERT-INTO1</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql INSERT INTO1</description>
+  <scope>source.php</scope>
+</snippet>

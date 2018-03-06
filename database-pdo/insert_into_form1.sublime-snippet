@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+\$var2 = "zzzasasass";
+
+// INSERT
+try {
+  \$stmt = \$pdo->prepare('INSERT INTO test_table2 (first_name, email) VALUES (:f_firstname, :f_email)');
+
+  // bind parameters to statement
+  \$stmt->bindParam(':f_firstname', \$_REQUEST['f_firstname']);
+  \$stmt->bindParam(':f_email', \$_REQUEST['f_email']);
+  // \$stmt->bindParam(':f_email', \$var2); // ok 
+
+  \$stmt->execute();
+
+  echo "inserted";   
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-INSERT-INTO-form1</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql INSERT INTO form1</description>
+  <scope>source.php</scope>
+</snippet>

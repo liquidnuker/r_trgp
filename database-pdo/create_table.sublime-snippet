@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+try{
+\$sql = "CREATE TABLE test_table2(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(30) NOT NULL,
+  email VARCHAR(70) NOT NULL UNIQUE
+)";    
+
+\$pdo->exec(\$sql);
+
+echo "Table created successfully.";
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-createtable</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql create table</description>
+  <scope>source.php</scope>
+</snippet>

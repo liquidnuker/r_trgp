@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+// testvar
+\$oldname = "name1";
+\$newname = "newname1";
+
+// UPDATE
+try {
+  \$stmt = \$pdo->prepare('UPDATE test_table2 SET first_name = ? WHERE first_name = ?');
+  \$stmt->execute([\$newname, \$oldname]);
+
+  echo "updated";   
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-UPDATE</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql UPDATE</description>
+  <scope>source.php</scope>
+</snippet>

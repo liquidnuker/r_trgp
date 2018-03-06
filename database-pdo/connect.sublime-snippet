@@ -1,0 +1,33 @@
+<snippet>
+  <content><![CDATA[
+// connect    
+try{
+  \$host = 'localhost';
+  \$db   = 'test_db1';
+  \$user = 'test_user1';
+  \$pass = '';
+  \$charset = 'utf8';
+
+  \$dsn = "mysql:host=\$host;dbname=\$db;charset=\$charset";
+  // \$dsn = "mysql:host=\$host;charset=\$charset";
+  \$opt = [
+  PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+  PDO::ATTR_EMULATE_PREPARES   => false,
+  ];
+
+  \$pdo = new PDO(\$dsn, \$user, \$pass, \$opt); 
+
+  echo "Connect Successfully. Host info: " . 
+  \$pdo->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS")); 
+
+} catch(PDOException \$error){
+  die("ERROR: Could not connect. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-connect</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql connect</description>
+  <scope>source.php</scope>
+</snippet>

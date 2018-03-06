@@ -1,0 +1,37 @@
+<snippet>
+  <content><![CDATA[
+// testvar
+\$first_name = "name3";
+\$zzzz = "name2";
+
+// WHERE
+try {
+  // \$stmt = \$pdo->prepare('SELECT * FROM test_table2 WHERE email = ? AND status=?');
+  \$stmt = \$pdo->prepare('SELECT * FROM test_table2 WHERE first_name = ?');
+  \$stmt->execute([\$zzzz]);
+
+  if(\$stmt->rowCount() > 0){
+    // echo "<table>";
+    
+    while(\$row = \$stmt->fetch()){
+      echo \$row['first_name'] . "<br />";
+    }
+    // echo "</table>";
+
+    // Free result set
+    unset(\$stmt);
+
+  } else{
+    echo "No records matching your query were found.";
+  }
+
+} catch(PDOException \$error){
+  die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-SELECT-WHERE</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql SELECT * WHERE...</description>
+  <scope>source.php</scope>
+</snippet>

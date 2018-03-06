@@ -1,21 +1,16 @@
 <snippet>
   <content><![CDATA[
 try{
-  \$sql = "CREATE DATABASE ${1:db_name}";
+  \$sql = "CREATE DATABASE test_db3";
   \$pdo->exec(\$sql);
   echo "Database created successfully";
 } catch(PDOException \$error){
   die("ERROR: Could not able to execute \$sql. " . \$error->getMessage());
 }
-
-// close connection
-unset(\$pdo);
-?>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>php-db-createdatabase</tabTrigger>
-  <description>php pdo create db</description>
-  <!-- Optional: Set a scope to limit where the snippet will 
-  trigger -->
+  <tabTrigger>php-db-createdb</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql create database</description>
   <scope>source.php</scope>
 </snippet>
