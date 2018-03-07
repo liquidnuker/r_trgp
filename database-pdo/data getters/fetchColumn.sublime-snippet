@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+\$email = "zz";
+
+\$stmt = \$pdo->prepare("SELECT first_name FROM test_table2 WHERE email=?");
+\$stmt->execute([\$email]);
+\$name = \$stmt->fetchColumn();
+
+echo \$name; 
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-get-fetchColumn()</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>get data only one field</description>
+  <scope>source.php</scope>
+</snippet>

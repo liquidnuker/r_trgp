@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+\$data = \$pdo->query('SELECT * FROM test_table2')->fetchAll(PDO::FETCH_UNIQUE);
+// print_r(\$data);
+
+foreach (\$data as \$i) {
+  echo \$i["first_name"] . \$i["email"] . "<br />";
+} unset(\$i);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-get-rows-unique</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>get data unique</description>
+  <scope>source.php</scope>
+</snippet>

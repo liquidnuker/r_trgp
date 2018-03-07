@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+\$data = \$pdo->query('SELECT sex, first_name FROM test_table2')->fetchAll(PDO::FETCH_GROUP);
+// var_dump(\$data);
+// echo count(\$data);
+// print_r(\$data["female"]);
+
+foreach (\$data["female"] as \$i) {
+  echo \$i["first_name"] . "<br />";
+} unset(\$i);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-get-rows-grouped</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>get data group x by y</description>
+  <scope>source.php</scope>
+</snippet>

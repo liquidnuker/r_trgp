@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+\$data = \$pdo->query('SELECT first_name FROM test_table2')->fetchAll(PDO::FETCH_COLUMN);
+// print_r(\$data);
+
+foreach (\$data as \$i) {
+  echo \$i . "<br />";
+} unset(\$i);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-get-one-column-array</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>get data one-dimensional array</description>
+  <scope>source.php</scope>
+</snippet>

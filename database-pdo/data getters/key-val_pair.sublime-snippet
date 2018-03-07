@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+\$data = \$pdo->query('SELECT first_name, email FROM test_table2')->fetchAll(PDO::FETCH_KEY_PAIR);
+// print_r(\$data);
+foreach (\$data as \$i => \$v) {
+  echo \$i . " " . \$v . "<br>";
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-get-key-val-pair</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>get data key-value pairs</description>
+  <scope>source.php</scope>
+</snippet>
