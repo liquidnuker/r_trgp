@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+\$radioSelected = '';
+if (isset(\$_POST['f_radio'])) {
+  \$radioSelected = \$_POST['f_radio'];
+  echo \$radioSelected[0]; 
+} else {
+  echo "no item selected"; 
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-helpers-radio1</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>input radio to php</description>
+  <scope>source.php</scope>
+</snippet>
