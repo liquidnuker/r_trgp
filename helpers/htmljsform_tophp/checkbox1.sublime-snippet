@@ -9,7 +9,7 @@ if(isset(\$_POST['f_newsletter']) && \$_POST['f_newsletter'] == 'yes') {
 // echo \$newsletter;  
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>php-helpers-checkbox-php1</tabTrigger>
+  <tabTrigger>php-helpers-checkbox1</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <description>single checkbox to php</description>
   <scope>source.php</scope>

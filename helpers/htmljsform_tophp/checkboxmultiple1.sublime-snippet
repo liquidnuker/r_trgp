@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+\$multipleItem = '';
+if (isset(\$_POST['f_item'])) {
+  \$multipleItem = \$_POST['f_item'];
+  for(\$i = 0, \$l = count(\$multipleItem); \$i < \$l; \$i++) {
+      echo \$multipleItem[\$i]; 
+  }
+} else {
+  echo "no item selected"; 
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-helpers-checkbox-multiple1</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>multiple checkbox to php</description>
+  <scope>source.php</scope>
+</snippet>
