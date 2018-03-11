@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+\$count = \$pdo->query("SELECT count(*) FROM ${1:test_table2}")->fetchColumn();
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-db-count</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>pdo sql get number of rows</description>
+  <scope>source.php</scope>
+</snippet>
