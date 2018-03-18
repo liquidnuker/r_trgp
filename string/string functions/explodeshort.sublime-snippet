@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-explode('${1:delimiter:|}', \$${2:str}, ${3:limitremain-2})
+explode('${1:delimiter:|}', \$${2:str}${3:, limitremain-2})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>explode()</tabTrigger>
