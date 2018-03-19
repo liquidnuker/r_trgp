@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+\$_FILES['${1:f_file}']
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php-res-files</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <description>php $_FILES['']</description>
+  <scope>source.php</scope>
+</snippet>
